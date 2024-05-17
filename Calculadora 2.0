@@ -1,0 +1,52 @@
+#include <stdio.h>
+
+int main(){
+	int N1, N2, Resultado;
+	char opc;
+	
+	printf("Opcao 1. Soma.\n");
+	printf("Opcao 2. Subtracao.\n");
+	printf("Opcao 3. Multiplicacao.\n");
+	printf("Opcao 4. Divisao.\n");
+	
+	printf("Digite a operacao desejada:");
+	scanf(" %c", &opc);
+	
+	printf("Digite o primeiro numero:");
+	scanf("%d", &N1);
+	
+	printf("Digite o segundo numero:");
+	scanf("%d", &N2);
+	
+	if (opc =='1'){
+		Resultado = N1 + N2;
+	printf("A soma de %d e %d vai ser: %d.\n", N1, N2, Resultado);
+	}
+	
+	else if (opc =='2'){
+		Resultado = N1 - N2;
+	printf("A subtracao de %d e %d vai ser: %d.\n", N1, N2, Resultado);
+	}
+	
+	else if (opc =='3'){
+			Resultado = N1 * N2;
+	printf("A multiplicacao de %d e %d vai ser: %d.\n", N1, N2, Resultado);
+	}
+	
+	else if (opc =='4'){
+	if (N2 != 0){
+		Resultado = N1 / N2;
+		printf("A divisao de %d e %d vai ser: %d.\n", N1, N2, Resultado);
+	}
+	else {
+		printf("Nao e possivel dividir por zero.\n");
+	}
+
+	
+	}else {
+		printf("Operacao invalida.\n");
+	}
+	
+		return 0;
+	
+	}
